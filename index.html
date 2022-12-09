@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="icon" href="js-developer-pokedex/assets/image/favicon.png" type="image/png" />  -->
     <title>Pokedex</title>
 
     <!-- Normalize CSS -->
@@ -26,8 +28,7 @@
     <section class="content">
         <h1>Pokedex</h1>
 
-        <ol id="pokemonList" class="pokemons">
-            <!-- ..... Pokemons here ..... -->
+        <ol id="pokemonList" class="pokemons" onclick="acao()">
         </ol>
 
         <div class="pagination">
@@ -37,10 +38,25 @@
         </div>
     </section>
 
+    <!--POKEMON DETAILS -->
+    <div class="modal">
+        <button id="Button" class="fechar" onclick="fechar()">x</button>
+        <div>
+            <h2>Pokemon Details</h2>
+            <span id="number"></span>
+        </div>
+        <div class="details">
+            <span id="species">Species:</span>
+            <span id="height">Height:</span>
+            <span id="weight">Weight:</span>
+            <span id="abilities"> Abilities: </span>
+        </div>
+    </div>
+
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
-</body>
 
+</body>
 </html>

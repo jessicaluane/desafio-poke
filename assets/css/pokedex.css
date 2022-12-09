@@ -3,7 +3,7 @@
     grid-template-columns: 1fr;
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style: none; 
 }
 
 .normal {
@@ -163,3 +163,4 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
